@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>MAC Address</th>
+            <th>Serial Number</th>
+            <th>Manufacturer</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for item in items %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.mac_address }}</td>
+            <td>{{ item.serial_number }}</td>
+            <td>{{ item.manufacturer }}</td>
+            <td>{{ item.description }}</td>
+            <td>
+                <a href="{{ url_for('main.edit_item', id=item.id) }}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{{ url_for('main.delete_item', id=item.id) }}" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
