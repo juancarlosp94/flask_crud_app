@@ -12,6 +12,8 @@ The Inventory Management Application is a web-based application for the manageme
 
 ## Technologies Used
 
+![Flask-web drawio](https://github.com/user-attachments/assets/aa3a3d64-7e77-462e-95d5-ec1b69057dbb)
+
 - **Backend**: Flask (Python)
 - **Database**: SQLAlchemy with a relational database (e.g., SQLite, PostgreSQL)
 - **Frontend**: HTML, CSS, JavaScript (Bootstrap for styling)
