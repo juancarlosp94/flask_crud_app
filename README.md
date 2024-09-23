@@ -41,3 +41,34 @@ Ensure you have the following installed:
 
 > [!NOTE]    
 > The application will be accessible at http://127.0.0.1:5000.
+
+## Usage
+
+### Add Item
+
+1. Click on the "Add Item" page.
+
+2. Fill out all fields in the form:
+
+- Name: Name of the item
+- Price: Price of the item it has to be positive number
+- MAC Address: the format of this field is a valid MAC address example: 00:0a:95:9d:68:16
+- Serial Number: serial number of the item that has to be unique.
+- Manufacturer: The manufacturer company.
+- Description: Description of the item.
+
+3. Press the "Add Item" to submit this item to the inventory.
+
+### Edit an Item
+
+1. Click on the view of the inventory.
+
+2. Click the "Edit" button next to the item you would like to edit.
+
+3. Update the fields as needed and click the "Update Item" button to save changes.
+
+### Viewing Items
+
+To view all the items within the inventory click on the main inventory page.
+
+Each item will list information such as, but not limited to name, price, and MAC address.
